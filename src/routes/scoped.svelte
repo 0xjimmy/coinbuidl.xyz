@@ -1,5 +1,5 @@
-<script lang="ts">
-	import { formatEther } from 'ethers/lib/utils';
+<script lang="ts" module>
+	export const ssr = false;
 	import {
 		connected,
 		connectMetamask,
@@ -60,11 +60,11 @@
 		</h2>
 		<p class="-mb-5">Example call on block</p>
 		<h2 class="text-xl text-black font-semibold">
-			$state.balanceOnBlock: {formatEther($state.balanceOnBlock)}
+			$state.balanceOnBlock: {$state.balanceOnBlock.toString()}
 		</h2>
 		<p class="-mb-5">Example call on interval</p>
 		<h2 class="text-xl text-black font-semibold">
-			$state.balanceOnTime: {formatEther($state.balanceOnTime)}<br />
+			$state.balanceOnTime: {$state.balanceOnTime.toString()}<br />
 			$state.timeState1: {$state.timeState1}<br />
 			$state.timeState2: {$state.timeState2}<br />
 			$state.timeState3: {$state.timeState3}
@@ -72,7 +72,7 @@
 		<p class="-mb-5">Example call on event</p>
 		<h2 class="text-xl text-black font-semibold">
 			$state.transferEventSender: {$state.transferEventSender}<br />
-			$state.transferEventSenderBalance: {formatEther($state.transferEventSenderBalance)}
+			$state.transferEventSenderBalance: {$state.transferEventSenderBalance.toString()}
 		</h2>
 	</section>
 </main>

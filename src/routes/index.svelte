@@ -2,7 +2,7 @@
 	<header class="flex flex-row items-center gap-5 justify-around w-full">
 		<h1 class="font-bold text-xl">coinbuidl.xyz</h1>
 		<a
-			href="/app"
+			href="/"
 			class="border-2 rounded-md bg-black text-green p-2 font-medium border-green hover:border-teal text-teal"
 			>App</a
 		>
