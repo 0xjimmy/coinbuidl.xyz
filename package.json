@@ -1,5 +1,5 @@
 {
-  "name": "svelte-ethers-boilerplate",
+  "name": "coinbuidl",
   "author": "https://github.com/DecentralisedTech",
   "version": "0.0.1",
   "scripts": {
@@ -35,6 +35,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.26",
     "@walletconnect/ethereum-provider": "^1.6.6",
     "ethers": "^5.5.2"
   }
